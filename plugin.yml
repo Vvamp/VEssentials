@@ -1,0 +1,26 @@
+main: com.vincentvansetten.vessentials.VEssentials
+name: VEssentials
+version: ' 0.1'
+author: Vincent Vvamp van Setten
+description: All-In-One plugin for the 'New Beginnings' server
+commands:
+  vessentials:
+    default: true
+    description: Shows a list of commands
+    usage: /vessentials [help] 
+    alias:
+      - ve
+    permission: vessentials.vessentials 
+    permission-message: You don't have the permission to use vessentials!
+  hug:
+    default: true
+    description: Hug a player
+    usage: /hug <player>
+    permission: vessentials.hug
+    permission-message: You don't have the permission to use hug!
+  kiss:
+    default: true
+    description: Kiss a player
+    usage: /kiss <player>
+    permission: vessentials.kiss
+    permission-message: You don't have the permission to use kiss!
