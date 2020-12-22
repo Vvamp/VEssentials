@@ -44,3 +44,12 @@ commands:
     permission-message: You don't have the permission to use Vanish!
     aliases:
       - v
+  warning:
+    default: op
+    description: Issues a warning to a player
+    usage: /warning <reason>
+    permission: vessentials.warning
+    permission-message: You don't have the permission to issue warnings to other players!
+    aliases:
+      - warn
+     

@@ -3,26 +3,17 @@ package com.vincentvansetten.vessentials;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.inventory.InventoryOpenEvent;
-import org.bukkit.material.MaterialData;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import net.minecraft.server.v1_16_R3.BlockPosition;
-import net.minecraft.server.v1_16_R3.TileEntityChest;
-import net.minecraft.server.v1_16_R3.World;
-import net.minecraft.server.v1_16_R3.Block;
-//import org.bukkit.block.Block;
-import org.bukkit.craftbukkit.v1_16_R3.CraftWorld;
-import org.bukkit.craftbukkit.v1_16_R3.util.CraftMagicNumbers;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.block.Chest;
-import org.bukkit.block.DoubleChest;
-import org.bukkit.configuration.*;
 import java.util.ArrayList;
 //import java.util.HashMap;
+
+// So far, this plugin replaces the plugins: SuperVanish(improved!), AdvancedBan(uncompleted), punishGui
+// Planned: clearlag, chairs, (ESSENTIALS?), bookshelf, lockette, TAB?
+
+
 public class VEssentials extends JavaPlugin {
 	
 	@Override

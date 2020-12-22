@@ -1,10 +1,7 @@
 package com.vincentvansetten.vessentials;
 import org.bukkit.Bukkit;
-import org.bukkit.Location;
 import org.bukkit.block.Chest;
 import org.bukkit.block.DoubleChest;
-import org.bukkit.craftbukkit.v1_16_R3.CraftWorld;
-import org.bukkit.craftbukkit.v1_16_R3.entity.CraftPlayer;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryCloseEvent;
@@ -13,18 +10,13 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 import net.md_5.bungee.api.ChatColor;
-import net.minecraft.server.v1_16_R3.Block;
-import net.minecraft.server.v1_16_R3.BlockPosition;
-import net.minecraft.server.v1_16_R3.Blocks;
-import net.minecraft.server.v1_16_R3.IBlockData;
-import net.minecraft.server.v1_16_R3.PacketPlayOutBlockAction;
-import net.minecraft.server.v1_16_R3.World;
 import java.util.HashMap;
 public class VEventListener implements Listener{
 	private static HashMap<Inventory, Inventory> virtualChests = new HashMap<Inventory, Inventory>();
 	
 	@EventHandler
     public void onInventoryOpenEvent(InventoryOpenEvent e) {
+		//TODO: Make sure UID is a user(not null). If it's null, it's the console
     	if (e.getInventory().getHolder() instanceof Chest ){
             String UID = e.getPlayer().getUniqueId().toString();
             if(VEssentials.vanishedPlayers.contains(UID)) {
