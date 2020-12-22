@@ -6,5 +6,5 @@
  *
  */
 module VEssentials {
-	requires spigot.api;
+	requires spigot;
 }

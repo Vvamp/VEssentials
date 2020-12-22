@@ -1,6 +1,6 @@
 main: com.vincentvansetten.vessentials.VEssentials
 name: VEssentials
-version: ' 0.1'
+version: ' 0.2'
 author: Vincent Vvamp van Setten
 description: All-In-One plugin for the 'New Beginnings' server
 commands:
@@ -8,7 +8,7 @@ commands:
     default: true
     description: Shows a list of commands
     usage: /vessentials [help] 
-    alias:
+    aliases:
       - ve
     permission: vessentials.vessentials 
     permission-message: You don't have the permission to use vessentials!
@@ -24,3 +24,23 @@ commands:
     usage: /kiss <player>
     permission: vessentials.kiss
     permission-message: You don't have the permission to use kiss!
+  fakeleave:
+    default: op
+    description: Sends a fake 'leave' message 
+    usage: /fakeleave
+    permission: vessentials.fakeleave 
+    permission-message: You don't have the permission to use Fake Leave!
+  fakejoin:
+    default: op
+    description: Sends a fake 'join' message 
+    usage: /fakejoin
+    permission: vessentials.fakejoin
+    permission-message: You don't have the permission to use Fake Join!
+  vanish:
+    default: op
+    description: Toggles vanish on a player
+    usage: /vanish 
+    permission: vessentials.vanish
+    permission-message: You don't have the permission to use Vanish!
+    aliases:
+      - v
